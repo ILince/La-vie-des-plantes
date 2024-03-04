@@ -1,0 +1,86 @@
+/*
+Theme Name: MartPress
+Theme URI: https://vfthemes.com/themes/martpress-free/
+Author: vfthemes
+Author URI: https://vfthemes.com/
+Description: MartPress is a modern and unique WooCommerce WordPress Theme, The theme is suitable for any shop like cloth, electronics, furniture, accessories, flowers, or any other, Its beautiful and clear style has been designed to showcase your products and increase your sales. Checkout the Pro Demo https://vfthemes.com/theme-demo/martpress-pro/
+Template: storepress
+Version: 1.0.7
+Tested up to: 6.2
+Requires PHP: 5.6
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: martpress
+Slug: martpress
+Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, grid-layout, portfolio, e-commerce
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+
+/* Colors */
+
+:root {
+    --bs-primary:#ba917b;
+    --bs-primary-dark:#e76800;
+    --bs-primary-light: #fbf0f0;
+    --bs-primary-shadow:rgba(0, 123, 255, 0.5);
+	--bs-secondary:#232323;
+}
+
+.homepage-one .product-category-home {
+    min-height: 233px;
+}
+
+
+.header-one .vf-breadcrumb-wrap .breadcrumb-content .breadcrumb-list, .header-one .vf-breadcrumb-wrap .breadcrumb-content .breadcrumb-list li, .header-one .vf-breadcrumb-wrap .breadcrumb-content .breadcrumb-list li a {
+    color: #fff;
+	font-size: 20px;
+}
+
+/*===== CTA =====*/
+
+.cta-wrapper {
+    border-radius: 5px;
+    padding: 48px 38px;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+}
+
+.cta-wrapper:before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('assets/images/snowballs-sm.png'),url('assets/images/snowballs-lg.png'),url('assets/images/snowballs-md.png');
+    -ms-animation: falling-down-snow 10s linear infinite;
+    animation: falling-down-snow 10s linear infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.cta-wrapper .display-3,
+.cta-wrapper .display-6 {
+    vertical-align: middle;
+}
+
+.cta-wrapper .display-3 span {
+    width: 32%;
+    display: inline-block;
+    font-size: 46%;
+    line-height: 1;
+    text-align: left;
+}
+
+/*===== // =====*/
+
+blockquote {
+    border-color: inherit !important;
+}
